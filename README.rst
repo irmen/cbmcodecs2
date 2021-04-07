@@ -14,6 +14,14 @@ The screencodes codec was created by hand later and borrows from them.
 This package is an updated fork of the original cbmcodecs package, which now seems unmaintained.
 
 
+Installation
+============
+
+Easiest is to install the latest version directly `from Pypi <https://pypi.org/project/cbmcodec2/>`_ :
+
+``pip install cbmcodecs2``
+
+
 Usage
 =====
 
