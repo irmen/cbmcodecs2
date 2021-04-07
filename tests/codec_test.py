@@ -1,4 +1,4 @@
-import cbmcodecs
+import cbmcodecs2
 import unittest
 
 

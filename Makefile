@@ -4,16 +4,16 @@ all:
 	@echo "Targets:  clean, test, dist, check_upload, upload"
 
 clean:
-	rm -f dist/* *.so
+	rm -f dist/* 
 	python setup.py clean --all
 
 test:
-	rm -f *.so
+	rm -f 
 	python setup.py build
 	python setup.py test
 
 dist: test
-	rm -f dist/* *.so
+	rm -f dist/*
 	python setup.py clean
 	python setup.py sdist
 

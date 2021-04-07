@@ -11,7 +11,7 @@ except ImportError:
     raise SystemExit
 
 
-outputdir = "cbmcodecs"
+outputdir = "cbmcodecs2"
 os.makedirs(outputdir, exist_ok=True)
 gencodec.convertdir("mappings", outputdir+"/")
 

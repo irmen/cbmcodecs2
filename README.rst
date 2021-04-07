@@ -1,15 +1,17 @@
-==========================================================================
-cbmcodecs - Python encodings for handling PETSCII and C64 Screencode text.
-==========================================================================
+===========================================================================
+cbmcodecs2 - Python encodings for handling PETSCII and C64 Screencode text.
+===========================================================================
 
 Introduction
 ============
 
-The cbmcodecs package provides a number of encodings for handling text from
+The cbmcodecs2 package provides a number of encodings for handling text from
 Commodore 8-bit systems. Much of the credit for this package must go to
 Linus Walleij of Triad, as these codecs were built from his PETSCII to Unicode
 mappings which can be found at http://www.df.lth.se/~triad/krad/recode/petscii.html
 The screencodes codec was created by hand later and borrows from them.
+
+This package is an updated fork of the original cbmcodecs package, which now seems unmaintained.
 
 
 Usage
@@ -39,10 +41,10 @@ screencode_c64_uc
     Upper-case/graphics mapping to screencodes (POKE) used by the Commodore 64 and Vic20
 
 
-Simply import the cbmcodecs package and you will then be able to use them as
+Simply import the cbmcodecs2 package and you will then be able to use them as
 with any of the encodings from the standard library::
 
-    import cbmcodecs
+    import cbmcodecs2
 
 
     with open('file.seq', encoding='petscii_c64en_lc') as f:
@@ -59,7 +61,7 @@ Currently only Python 3 is supported (tested on 3.5+). May or may not work on ol
 License
 =======
 
-As with the original PETSCII to Unicode mapping files, the cbmcodecs package
+As with the original PETSCII to Unicode mapping files, the cbmcodecs2 package
 is Licensed under the GNU GPL Version 2, see the ``LICENSE.txt`` file for the
 full text.
 
@@ -78,5 +80,7 @@ Credits
 =======
 
 Linus Walleij - Original C64 and VIC-20 mappings
+
 Dan Johnson - Translation of C64 & VIC-20 mappings to python codecs
-Irmen de Jong - Screencode mappings, bug fixes and unit tests.
+
+Irmen de Jong - Screencode mappings, bug fixes and unit tests. Updated to cbmcodecs2 package.
