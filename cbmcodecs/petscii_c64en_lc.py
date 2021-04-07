@@ -1,6 +1,6 @@
-""" Python Character Mapping Codec petscii_c64en_lc generated from 'mappings/petscii_c64en_lc.txt' with gencodec.py.
-
-"""#"
+"""
+Python Character Mapping Codec petscii_c64en_lc generated from 'mappings/petscii_c64en_lc.txt' with gencodec.py.
+"""
 
 import codecs
 

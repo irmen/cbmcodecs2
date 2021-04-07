@@ -1,6 +1,6 @@
-""" Python Character Mapping Codec screencode_c64_lc generated from 'mappings/screencode_c64_lc.txt' with gencodec.py.
-
-"""#"
+"""
+Python Character Mapping Codec screencode_c64_lc generated from 'mappings/screencode_c64_lc.txt' with gencodec.py.
+"""
 
 import codecs
 
