@@ -17,7 +17,7 @@ This package is an updated fork of the original cbmcodecs package, which now see
 Installation
 ============
 
-Easiest is to install the latest version directly `from Pypi <https://pypi.org/project/cbmcodec2/>`_ :
+Easiest is to install the latest version directly `from Pypi <https://pypi.org/project/cbmcodecs2/>`_ :
 
 ``pip install cbmcodecs2``
 
