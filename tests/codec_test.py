@@ -48,6 +48,20 @@ class TestC64Codecs(unittest.TestCase):
             "hello".encode(codec)
 
 
+class TestVic1001Codecs(unittest.TestCase):
+    def test_graphics(self):
+        codec = "petscii_vic1001jp_gr"
+        self.assertEqual(b"HELLO 123 @!\x5c", "HELLO 123 @!¥".encode(codec))
+
+    def test_katakana(self):
+        codec = "petscii_vic1001jp_kk"
+        self.assertEqual(b"HELLO 123 @!\x5c", "HELLO 123 @!¥".encode(codec))
+        self.assertEqual(b"\xd3", "モ".encode(codec))
+        self.assertEqual(b"\xf6", "日".encode(codec))
+        with self.assertRaises(UnicodeEncodeError):
+            "hello".encode(codec)
+
+
 class TestVic20Codecs(unittest.TestCase):
     def test_lowercase(self):
         codec = "petscii_vic20en_lc"

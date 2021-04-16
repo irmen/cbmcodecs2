@@ -33,6 +33,12 @@ petscii_c64en_lc
 petscii_c64en_uc
     The English version of the Commodore 64 upper-case/graphics character set
 
+petscii_vic1001jp_gr
+    The Japanese version of the VIC-1001 Latin upper-case/graphics character set
+
+petscii_vic1001jp_kk
+    The Japanese version of the VIC-1001 Latin upper-case/katakana character set
+
 petscii_vic20en_lc
     The English version of the VIC-20 mixed-case character set
 
