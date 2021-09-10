@@ -22,6 +22,11 @@ class TestC64Codecs(unittest.TestCase):
         with self.assertRaises(UnicodeEncodeError):
             "✓".encode(codec)
 
+    def test_linedraw(self):
+        codec = "petscii_c64en_uc"
+        self.assertEqual(b"\xc0\xdb\xdd", "─┼│".encode(codec))
+        self.assertEqual(b"\x60\x7b\x7d".decode(codec), "─┼│")
+
     def test_screencodes_lowercase(self):
         codec = "screencode_c64_lc"
         self.assertEqual(b"\x08\x05\x0c\x0c\x0f\x20\x57\x4f\x52\x4c\x44\x20\x31\x32\x33\x20\x00\x21\x1c",
@@ -60,3 +65,8 @@ class TestVic20Codecs(unittest.TestCase):
         self.assertEqual(b"\xff", "π".encode(codec))
         with self.assertRaises(UnicodeEncodeError):
             "✓".encode(codec)
+
+    def test_linedraw(self):
+        codec = "petscii_vic20en_uc"
+        self.assertEqual(b"\xc0\xdb\xdd", "─┼│".encode(codec))
+        self.assertEqual(b"\x60\x7b\x7d".decode(codec), "─┼│")
