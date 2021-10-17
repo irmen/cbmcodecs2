@@ -28,7 +28,7 @@ from . import petscii_vic20en_uc
 from . import screencode_c64_lc
 from . import screencode_c64_uc
 
-__version__ = '1.1'
+__version__ = '1.2'
 __all__ = []
 
 petscii_codecs = {

@@ -13,6 +13,8 @@ The screencodes codec was created by hand later and borrows from them.
 
 This package is an updated fork of the original cbmcodecs package, which now seems unmaintained.
 
+Requires Python 3.x
+
 
 Installation
 ============
@@ -66,12 +68,6 @@ with any of the encodings from the standard library::
             print(line)
 
 
-Python Version Note
-===================
-
-Currently only Python 3 is supported (tested on 3.5+). May or may not work on older versions.
-
-
 License
 =======
 
@@ -98,3 +94,5 @@ Linus Walleij - Original C64 and VIC-20 mappings
 Dan Johnson - Translation of C64 & VIC-20 mappings to python codecs
 
 Irmen de Jong - Screencode mappings, bug fixes and unit tests. Updated to cbmcodecs2 package.
+
+Simon Rowe - box drawing character improvements and Japanese VIC-1001 codecs.
