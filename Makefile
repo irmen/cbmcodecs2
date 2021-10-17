@@ -8,7 +8,6 @@ clean:
 	python setup.py clean --all
 
 test:
-	rm -f 
 	python setup.py build
 	python setup.py test
 
