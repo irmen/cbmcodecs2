@@ -11,7 +11,7 @@ with open(v_file) as f:
 setup(
     name='cbmcodecs2',
     description='Python codecs for CBM PETSCII and Screencode encodings',
-    long_description=open('README.rst').read(),
+    long_description=open('README.rst', 'rb').read().decode(errors="replace"),
     author='Irmen de Jong',
     author_email='irmen@razorvine.net',
     packages=['cbmcodecs2'],
